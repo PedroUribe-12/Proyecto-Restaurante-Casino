@@ -1,52 +1,98 @@
+<div class="grid grid-nogutter surface-section text-800">
+  <div class="col-12 md:col-7 overflow-hidden flex align-items-center justify-content-center fondo">
+    <div class="imagen"></div>
+    <section class="px-3 md:px-7">
+      <h1 class="block lg:text-8xl text-7xl font-bold mb-3">Contáctanos</h1>
+      <h2 class="mb-4 text-xl md:text-2xl mt-5">Si necesitas contactarnos para realizar alguna pregunta, comentario o sugerencia, por favor, siéntete libre de hacerlo, tus aportaciones nos sirven de gran manera para seguir mejorando.</h2>
+      <button pButton pRipple label="Enviar mensaje" type="button" class="mr-3 p-button-raised"></button>
+    </section>
+  </div>
+  <div class="col-12 md:col-5 p-6 text-center md:text-left flex align-items-center justify-content-center info h-screen">
+      <section>
+          <h2 class="lg:text-7xl md:text-5xl text-6xl titulo-2 mt-3">Datos de contacto</h2>
+            <div class="grid">
+              <div class="col-2"><i class="pi pi-map-marker text-6xl md:text-5xl lg:text-7xl pt-6"></i></div>
+              <div class="col-10 sub-titulo">
+                  <div class="col-12"><span class="text-3xl md:text-2xl">Nuestro Restaurante</span></div>
+                  <div class="col-12"><p class="text-3xl md:text-3xl">Manuel Estrada 2916</p></div>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-2"><i class="pi pi-clock text-6xl md:text-5xl lg:text-7xl pt-7"></i></div>
+              <div class="col-10 sub-titulo">
+                  <div class="col-12"><span class="text-3xl md:text-2xl">Horario Abierto</span></div>
+                  <div class="col-12"><p class="text-3xl 5md:text-3xl">L-V: 8am-8pm</p></div>
+                  <div class="col-12"><p class="text-3xl md:text-3xl">L-V: 8am-8pm</p></div>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-2"><i class="pi pi-whatsapp text-6xl md:text-5xl lg:text-7xl pt-6"></i></div>
+              <div class="col-10 sub-titulo">
+                  <div class="col-12"><span class="text-3xl md:text-2xl">Pedidos-Whatsapp</span></div>
+                  <div class="col-12"><p class="text-3xl md:text-3xl">(+54) 299-552-5912</p></div>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-2"><i class="pi pi-envelope text-6xl md:text-5xl lg:text-7xl pt-6"></i></div>
+              <div class="col-10 sub-titulo">
+                  <div class="col-12"><span class="text-3xl md:text-2xl">Nuestro Email</span></div>
+                  <div class="col-12"><p class="text-3xl md:text-3xl">emi@gmail.com</p></div>
+              </div>
+            </div>
+      </section>
+  </div>
+</div>
 
-<div class="container-fluid">
-    <div class="contenedor">
-      <h1 class="logo flex justify-content-center align-item-center mb-3">Contactanos</h1>
-    
-      <div class="contenido_contactanos">
-        <div class="formulario_de_contacto">
-          <h3>Contactanos</h3>
-          <form>
-            <p>
-              <label>Nombre</label>
-              <input type="text" name="nombre_completo" />
-            </p>
-            <p>
-              <label>Email</label>
-              <input type="email" name="email" />
-            </p>
-            <p>
-              <label>Telefono</label>
-              <input type="tel" name="telefono" />
-            </p>
-            <p>
-              <label>Asunto</label>
-              <input type="text" name="asunto" />
-            </p>
-            <p class="bloque">
-              <label>Mensaje</label>
-              <textarea name="mensaje" rows="3"></textarea>
-            </p>
-            <p class="bloque">
-              <button class="btn" type="submit">Enviar</button>
-            </p>
-          </form>
-        </div>
-        <div class="contactanos_info text-center">
-          <h4>Mas informacion</h4>
-          <ul>
-            <li><i class="fa-solid fa-location-dot"></i> Baker Street</li>
-            <li><i class="fa-solid fa-phone"></i> 111 111 111 111</li>
-            <li><i class="fa-solid fa-envelope"></i> orfeouribe@gmail.com</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nobis
-            consequatur amet harum explicabo voluptatem, sequi in id. Tempore,
-            atque.
-          </p>
-          <p class="p1">Compañia.com</p>
+<div class="grid surface-section">
+  <div class="col-12 md:col-6 mt-4 mb-4">
+      <div class="grid">
+          <div class="col-12 flex align-items-center justify-content-center text-2xl md:text-xl lg:text-3xl">
+              <h2>Llamar: (+54) 299-552-5912</h2>
+          </div>
+          <div class="col-12 flex align-items-center justify-content-center text-2xl md:text-xl lg:text-3xl font-bold">
+              <p>no podemos esperar para hacer realidad sus ideas</p>
+          </div>
+      </div>
+  </div>
+  <div class="col-12 md:col-6 mt-4 mb-4 flex align-items-center justify-content-center">
+    <button pButton type="button" label="Aprenda más sobre nosotros" class="p-button-warning"></button>
+  </div>
+</div>
+<div class="grid grid-nogutter formulario">
+  <div class="col-12 md:col-6 p-6 text-center md:text-left">
+    <form class="text-50">
+      <div class="grid">
+        <div class="col-12">
+            <h2 class="text-6xl">Ponte En Contacto</h2>
+            <div class="grid mt-6">
+                <div class="col-12 md:col-6">
+                  <h5 class="text-base mb-2">Nombre</h5>
+                  <i class="pi pi-users mr-3"></i>
+                  <p-chips (ngModel)="valores"></p-chips>
+                </div>
+                <div class="col-12 md:col-6">
+                  <h5 class="text-base mb-2">Apellido</h5>
+                  <i class="pi pi-users mr-3"></i>
+                  <p-chips (ngModel)="valores"></p-chips>
+                </div>
+            </div>
         </div>
       </div>
-    </div>
+      <!-- <div class="grid">
+          <div class="col-12">
+            <h5 class="text-base pl-2 mb-2">Mensaje</h5>
+            <div class="container-text-area">
+              <p-chips (ngModel)="valores"></p-chips>
+            </div>
+          </div>
+      </div> -->
+    </form>
+  </div>
+  <div class="col-12 md:col-6 overflow-hidden form-imagen">
+    <img src="../../../assets/banner/1c04d2a7f356e11a6bd0c7023cdb13fa.jpg" alt="Image" class="md:ml-auto block md:h-full" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">
+  </div>
 </div>
-    
+
+<div class="grid">
+    <div class="col-12 mapa"></div>
+</div>

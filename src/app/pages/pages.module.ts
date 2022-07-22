@@ -6,7 +6,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DessertsComponent } from './desserts/desserts.component';
 import { ComponentsModule } from '../components/components.module';
 import { PlatillosComponent } from './platillos/platillos.component';
-
+import {ButtonModule} from 'primeng/button';
+import {ChipsModule} from 'primeng/chips';
+import {InputTextModule} from 'primeng/inputtext';
+import {InputTextareaModule} from 'primeng/inputtextarea';
 
 
 @NgModule({
@@ -19,7 +22,11 @@ import { PlatillosComponent } from './platillos/platillos.component';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    ButtonModule,
+    ChipsModule,
+    InputTextModule,
+    InputTextareaModule
   ]
 })
 export class PagesModule { }

@@ -5,8 +5,6 @@ import { FooterComponent } from './footer/footer.component';
 import {MenubarModule} from 'primeng/menubar';
 import {ButtonModule} from 'primeng/button';
 
-
-
 @NgModule({
   declarations: [
     NavbarComponent,

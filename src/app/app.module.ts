@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-
+import {ChipsModule} from 'primeng/chips';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +16,8 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     ComponentsModule,
     SharedModule,
-    PagesModule
+    PagesModule,
+    ChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

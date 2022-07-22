@@ -53,8 +53,13 @@
         .p-component.abajo .p-menubar-root-list{
             background: #FFBE00;
         }
+
+        .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+            justify-content: center;
+        }
     }
 }
+
 /* #110303 */
 
 

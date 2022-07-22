@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  valores: string[] = [];
+
+  public autoResize: boolean = true;
+
+  valueIconLeft: any;
+
   constructor() { }
 
   ngOnInit(): void {

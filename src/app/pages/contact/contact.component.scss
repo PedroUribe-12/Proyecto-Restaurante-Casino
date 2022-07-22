@@ -1,109 +1,113 @@
 *{
     box-sizing: border-box;
-}
-.container-fluid{
-    background-color: #181818;
-    color: white;
-    padding: 0 1.5em;
-}
-
-.p1{
-    margin-bottom: 0;
-}
-
-.contenedor{
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3em 0;
-}
-
-.contenido_contactanos{
-    box-shadow: 0 0 40px 0 rgb(255, 255, 255, .3);
-}
-
-.contenido_contactanos > *{
-    padding: 2em;
-}
-
-.formulario_de_contacto{
-    background-color: #222222;
-}
-
-.formulario_de_contacto form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.formulario_de_contacto form .bloque{
-    grid-column: 1/3;
-}
-
-.formulario_de_contacto form p{
     margin: 0;
-    padding: 1em;
 }
 
-.formulario_de_contacto form button,
-.formulario_de_contacto form input,
-.formulario_de_contacto form textarea{
+h1{
+    padding-left: .3em;
+    border-left: #FFBE00 solid .2em;
+}
+
+.overflow-hidden section{
+    color: white;
+    position: absolute;
+}
+
+.fondo{
+    background: #000 fixed no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.imagen{
     width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: white;
-    border-bottom: 1px solid #ce9d0a;
+    height: 100vh;
+    background: url("../../../assets/Global-Payroll.jpeg") no-repeat 50% fixed;
+    background-size: cover;
+    opacity: 0.4;
 }
 
-.formulario_de_contacto form button{
-    background: #ce9d0a;
-    color: white;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
+.info{
+    background-color: #FFBE00;
+    color: black;
 
+    section {
+
+        ul li{ 
+            list-style: none;
+            i{
+                margin-top: 1em;
+
+                span{
+                    padding-left: .3em;
+                }
+            }
+        }
+
+        h2{
+            border-left: #000 solid .2em;
+            padding-left: .3em;
+        }
+    }
+    
 }
 
-.formulario_de_contacto form button:hover,
-.formulario_de_contacto form button:focus{
-    background: #FFBE00;
-    color: white;
-    transition: background-color 100ms ease-out;
-    outline: 0;
+.formulario{
+    padding: 7% 5% 7% 5%;
+    background: rgb(38,40,47);
+    background: linear-gradient(90deg, rgba(38,40,47,1) 0%, rgba(30,30,37,1) 9%, rgba(14,13,13,1) 31%, rgba(0,0,0,1) 56%, rgba(0,0,0,1) 70%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
 }
 
-.contactanos_info{
-    background-color: black;   
+form{
+    h2{
+        border-left: #FFBE00 solid .2em;
+        padding-left: .3em;
+    }
 }
 
-.contactanos_info ul{
-    list-style: none;
-    padding: 0;
-}
+@media screen and (max-width: 850px){
 
-.contactanos_info ul li{
-    padding: .3em;
-}
-
-@media (min-width: 900px) {
-    body{
-        padding: 0 4rem;
+    .form-imagen{
+        display: none;
     }
 
-    .contenido_contactanos{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+    form .grid .h2{
+        justify-content:center;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 407px){
+    form i{
+        display: none;
+    }
+}
+
+.mapa{
+    width: 100%;
+    height: 80vh;
+    background: url("../../../assets/mapa.jpg") no-repeat 50% fixed;
+    background-size: cover;
+}
+
+.container-text-area{
+    ::ng-deep{
+        p-chips{
+            width: 10000px !important;
+        }
+    }
+}
+
+.sub-titulo{
+
+    padding-top: 2.3em;
+
+    padding-left: 1em;
+
+    p{
+        color: #ffff;
     }
 
-    .contenido_contactanos > *{
-        padding: 2em;
-    }
-
-    .contactanos_info h4,
-    .contactanos_info ul,
-    .contactanos_info p{
-        padding: 1.2em;
-        text-align: left;
+    span{
+        font-weight: bold;
     }
 }
