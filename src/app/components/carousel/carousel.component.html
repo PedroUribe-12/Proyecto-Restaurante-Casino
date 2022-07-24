@@ -1,0 +1,18 @@
+<p-carousel class="mr-0" [value]="platillos" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="header">
+        <h5 class="flex justify-content-center align-items-center text-3xl sm:text-3xl md:text-5xl text-50 mb-4">Platillos Destacados</h5>
+    </ng-template>
+    <ng-template let-platillo pTemplate="item">
+        <div class="platillo-item">
+            <div class="platillo-item-content">
+                <div class="mb-3">
+                    <img src="{{platillo.imagen}}" [alt]="platillo.nombre" class="platillo-image"/>
+                </div>
+                <div>
+                    <h4 class="mb-1 text:base md:text-xl">{{platillo.nombre}}</h4>
+                    <h6 class="mt-0 mb-3 text:base md:text-base">${{platillo.precio}}</h6>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>

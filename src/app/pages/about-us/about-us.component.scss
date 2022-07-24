@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .imagen{
@@ -58,4 +60,9 @@
     li{
         font-size: 1.2em;
     }
+}
+
+.frase{
+    padding: 5% 15% 5% 15%;
+    background-color: #F7F7F7;
 }
