@@ -14,44 +14,46 @@ export class CarouselComponent implements OnInit {
 
     this.responsiveOptions = [
       {
-          breakpoint: '1024px',
+          breakpoint: '2000px',
           numVisible: 3,
           numScroll: 3
       },
       {
-          breakpoint: '768px',
+          breakpoint: '1074px',
           numVisible: 2,
           numScroll: 2
       },
       {
-          breakpoint: '560px',
+          breakpoint: '842px',
           numVisible: 1,
           numScroll: 1
       }
+      
     ];
   }
 
   ngOnInit(): void {
   }
 
+  val3: number = 5;
+
   platillos: Platillo[] = [{
-    nombre:'Qcy',
-    precio: 10,
-    imagen:'https://i.pinimg.com/564x/38/34/83/383483c4ed4a62bed7451f9bddccb521.jpg',
-    descripcion:'Hola como te va'
+      nombre: 'Magret con pure de remolacha', 
+      precio: 10,
+      imagen:'../../../assets/platillos/2.jpg',
+      descripcion:'Hola como te va',
     },
     {
-      nombre:'Qcy',
+      nombre:'Magret con salsa granada',
       precio: 15,
-      imagen:'https://i.pinimg.com/564x/8d/48/5e/8d485e592edbfae2943842deff17a9ac.jpg',
-      descripcion:'Hola como te va'
+      imagen:'../../../assets/platillos/1.jpg',
+      descripcion:'Hola como te va',
     },
     {
-      nombre:'Qcy',
+      nombre:'Beef Wellington',
       precio: 20,
-      imagen:'https://i.pinimg.com/564x/70/3f/a6/703fa6f1251461c8e85e336b04ce6f2b.jpg',
-      descripcion:'Hola como te va'
+      imagen:'../../../assets/platillos/3.jpg',
+      descripcion:'Hola como te va',
     },
   ]
-
 }

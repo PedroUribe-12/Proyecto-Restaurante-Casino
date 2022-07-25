@@ -6,6 +6,7 @@ import { CardComponent } from './card/card.component';
 import { CardModule} from 'primeng/card';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule} from 'primeng/carousel';
+import {RatingModule} from 'primeng/rating';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CarouselModule} from 'primeng/carousel';
     ButtonModule,
     CardModule,
     CarouselModule,
+    RatingModule
   ],
   exports: [
     BannerComponent,

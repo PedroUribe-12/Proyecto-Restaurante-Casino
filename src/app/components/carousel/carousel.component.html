@@ -5,14 +5,19 @@
     <ng-template let-platillo pTemplate="item">
         <div class="platillo-item">
             <div class="platillo-item-content">
-                <div class="mb-3">
+                <div class="mb-3 ">
                     <img src="{{platillo.imagen}}" [alt]="platillo.nombre" class="platillo-image"/>
                 </div>
                 <div>
-                    <h4 class="mb-1 text:base md:text-xl">{{platillo.nombre}}</h4>
-                    <h6 class="mt-0 mb-3 text:base md:text-base">${{platillo.precio}}</h6>
+                    <span class="mb-1 text-sm">{{platillo.nombre}}</span>
+                    <p-rating (ngModel)="val3" [readonly]='true' [cancel]="false"></p-rating>
+                    <div class="grid">
+                        <div class="col-6"><span>${{platillo.precio}}</span></div>
+                        <div class="col-6"><button pButton pRipple type="button" label="Ir a platillos" class="p-button-raised p-button-warning p-2"></button></div>
+                    </div>
                 </div>
             </div>
         </div>
     </ng-template>
 </p-carousel>
+<!-- [readonly]='true' -->

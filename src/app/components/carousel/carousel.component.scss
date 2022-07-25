@@ -4,6 +4,21 @@
     margin: 0;
 }
 
+   
+        
+
+    ::ng-deep{
+        @media (max-width: 650) {
+            .p-carousel-items-content{
+                width: 10em !important;
+            }
+        }
+
+    }
+        
+
+  
+
 img{
     /* background-size: cover;
     width: 100%; 
@@ -12,7 +27,7 @@ img{
     object-fit: cover;
     border-radius: 5%; */
     background-size: cover;
-    width: 100%; 
+    width: 90%; 
     height: 30em; 
     background-position: center; 
     object-fit: cover;
@@ -22,7 +37,8 @@ img{
     /* padding: 3% 3% 3% 3%;
     background-color: #ffbe00; 
     border-radius: 5%;*/
-    margin: 0 1% 0 1%; 
+    
+    margin: 0 1% 0 1%;  
     color: #fff;
     text-align: center;
     padding: 2.5em 1em/* 50px 35px */;  
@@ -48,6 +64,8 @@ img{
 }
 
 
+
+
 @media screen and (max-height: 837px){
     img{
         height: 22em;
@@ -60,3 +78,15 @@ img{
     }
 }
 
+::ng-deep{
+    .pi-star:before {
+        content: "\e936";
+        color: #ffbb00;
+    }
+}
+
+::ng-deep{
+    .p-rating{
+        margin: 1em 0 !important;
+    }
+}
