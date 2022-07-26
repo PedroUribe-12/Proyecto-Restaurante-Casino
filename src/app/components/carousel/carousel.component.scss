@@ -4,20 +4,13 @@
     margin: 0;
 }
 
-   
-        
-
-    ::ng-deep{
-        @media (max-width: 650) {
-            .p-carousel-items-content{
-                width: 10em !important;
-            }
+:host ::ng-deep{
+    @media (max-width: 650){
+        .p-carousel-container{
+            width: 10em !important;
         }
-
     }
-        
-
-  
+}
 
 img{
     /* background-size: cover;
@@ -63,9 +56,6 @@ img{
     
 }
 
-
-
-
 @media screen and (max-height: 837px){
     img{
         height: 22em;
@@ -90,3 +80,7 @@ img{
         margin: 1em 0 !important;
     }
 }
+
+:host ::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+    background-color: #ffbe00 !important;
+} 

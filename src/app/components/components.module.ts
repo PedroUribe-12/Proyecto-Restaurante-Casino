@@ -7,12 +7,14 @@ import { CardModule} from 'primeng/card';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule} from 'primeng/carousel';
 import {RatingModule} from 'primeng/rating';
+import { CardChefComponent } from './card-chef/card-chef.component';
 
 @NgModule({
   declarations: [
     BannerComponent,
     CardComponent,
-    CarouselComponent
+    CarouselComponent,
+    CardChefComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import {RatingModule} from 'primeng/rating';
   exports: [
     BannerComponent,
     CardComponent,
-    CarouselComponent
+    CarouselComponent,
+    CardChefComponent
   ]
 })
 export class ComponentsModule { }

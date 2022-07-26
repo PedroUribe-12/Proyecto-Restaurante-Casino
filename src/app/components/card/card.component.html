@@ -45,15 +45,16 @@
 </div> -->
 
 <!-- efecto piola -->
-
-<div class="contenedor flex justify-content-center align-items-center">
-    <div class="carta">
-        <div class="contenido">
-            <h2>Gordon Ramsi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sint blanditiis magni ipsam velit accusantium?</p>
-            <a href="#">Leer mas</a>
+<div class="grid grid-nogutter">
+    <div *ngFor="let chef of chefs" class="contenedor sm:col-12 md:col-6"> <!-- flex justify-content-center align-items-center -->
+        <div class="carta">
+            <div class="contenido">
+                <h2>{{chef.nombre}}</h2>
+                <p>{{chef.descripcion}}</p>
+                <a href="#">Leer mas</a>
+            </div>
+            <img [src]="chef.imagen" alt="">
         </div>
-        <img src="../../../assets/chefs/gordon_ramsey-removebg-preview.png" alt="">
     </div>
 </div>
 

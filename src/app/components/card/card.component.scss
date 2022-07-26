@@ -157,6 +157,10 @@
 
 .contenedor{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .contenedor .carta{
@@ -175,15 +179,16 @@
 .contenedor .carta img{
     position: absolute;
     bottom: 0;
+    object-fit: cover;
     left: 50%;
     transform: translateX(-50%);
-    height: 380px;
+    height: 350px;
     transition: 0.5s;
 }
 
 .contenedor .carta:hover img{
     left: 70%;
-    height: 460px;
+    height: 440px;
 }
 
 .contenedor .carta .contenido{
@@ -212,7 +217,6 @@
 
 .contenedor .carta .contenido p{
     color: #fff;
-
 }
 
 .contenedor .carta .contenido a{
@@ -226,6 +230,7 @@
     font-weight: 700;
 }
 
+
 @media screen and (max-width: 1872px) {
     .contenedor .carta{
         width: auto;
@@ -234,22 +239,56 @@
     }
 
     .contenedor .carta:hover{
-        height: 600px;
+        height: 700px;
     }
 
     .contenedor .carta:hover img{
+        margin-top: 1em;
         top: 0;
         left: 50%;
         height: 400px;
     }
 
     .contenedor .carta .contenido{
+        padding-bottom: 5em;
         width: 100%;
         left: 0;
-        padding: 2.5em;
     }
 }
 
 @media screen and (max-width: 1073px) {
-    
+    .contenedor .carta img{
+        width: 25em;
+        height: 20em;
+    }
+
+    .contenedor .carta:hover img{
+        width: 25em;
+        height: 20em;
+    }
+
+    .contenedor .carta:hover{
+        height: 550px;
+    }
+
+    .contenedor .carta .contenido{
+        padding-bottom: 2em;
+    }
+}
+@media (max-width: 924px) {
+    .contenedor .carta .contenido{
+        padding-bottom: .5em;
+    }
+}
+@media (min-width: 768px) and (max-width: 886px){
+    .contenedor .carta img{
+        width: 20em;
+        height: 20em;
+    }
+}
+
+@media (max-width: 767px) {
+    .contenedor .carta .contenido{
+        padding-bottom: 2.5em;
+    }
 }
