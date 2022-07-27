@@ -63,11 +63,21 @@ img{
     }
 }
 
-/* @media (max-width: 654){
-    .p-carousel-container{ 
-        width: 10em !important;
+@media (max-width: 654px){
+    ::ng-deep{
+        .p-carousel-container{ 
+            width: 30em !important;
+        }
     }
-} NO FUNCIONA*/ 
+} 
+
+@media (max-width: 480px) {
+    ::ng-deep{
+        .p-carousel-container{ 
+            width: 25em !important;
+        }
+    }
+}
 
 ::ng-deep{
     .pi-star:before {
