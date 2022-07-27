@@ -7,6 +7,7 @@ import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import {ChipsModule} from 'primeng/chips';
+
 @NgModule({
   declarations: [
     AppComponent

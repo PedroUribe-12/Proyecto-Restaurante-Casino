@@ -19,12 +19,12 @@ export class CarouselComponent implements OnInit {
           numScroll: 3
       },
       {
-          breakpoint: '1074px',
+          breakpoint: '1119px',
           numVisible: 2,
           numScroll: 2
       },
       {
-          breakpoint: '842px',
+          breakpoint: '892px',
           numVisible: 1,
           numScroll: 1
       }

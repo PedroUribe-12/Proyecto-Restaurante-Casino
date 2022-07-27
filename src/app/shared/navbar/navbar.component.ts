@@ -28,10 +28,6 @@ export class NavbarComponent implements OnInit {
         routerLink: 'platillos'
       },
       {
-        label: 'Postres',
-        routerLink: 'postres'
-      },
-      {
         label: 'Contacto',
         routerLink: 'contacto'
       },

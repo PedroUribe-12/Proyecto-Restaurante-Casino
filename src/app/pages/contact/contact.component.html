@@ -58,23 +58,50 @@
     <button pButton type="button" label="Aprenda más sobre nosotros" class="p-button-warning"></button>
   </div>
 </div>
-<div class="grid grid-nogutter formulario">
-  <div class="col-12 md:col-6 p-6 text-center md:text-left">
+<div class="grid grid-nogutter formulario justify-content-center">
+  <div class="col-12 lg:col-6 p-6 text-center md:text-left contenedor">
     <form class="text-50">
       <div class="grid">
         <div class="col-12">
             <h2 class="text-6xl">Ponte En Contacto</h2>
             <div class="grid mt-6">
                 <div class="col-12 md:col-6">
-                  <h5 class="text-base mb-2">Nombre</h5>
+                    <div class="p-inputgroup">
+                      <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                      <input type="text" pInputText placeholder="Nombre">         
+                    </div>
+                  <!-- <h5 class="text-base mb-2">Nombre</h5>
                   <i class="pi pi-users mr-3"></i>
-                  <p-chips (ngModel)="valores"></p-chips>
+                  <p-chips (ngModel)="valores"></p-chips> -->
                 </div>
                 <div class="col-12 md:col-6">
-                  <h5 class="text-base mb-2">Apellido</h5>
+                  <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <input type="text" pInputText placeholder="Apellido">         
+                  </div>
+                  <!-- <h5 class="text-base mb-2">Apellido</h5>
                   <i class="pi pi-users mr-3"></i>
-                  <p-chips (ngModel)="valores"></p-chips>
+                  <p-chips (ngModel)="valores"></p-chips> -->
                 </div>
+            </div>
+            <div class="grid">
+              <div class="col-12 md:col-6">
+                <div class="p-inputgroup">
+                  <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+                  <input type="text" pInputText placeholder="Email">         
+                </div>
+              </div>
+              <div class="col-12 md:col-6">
+                <div class="p-inputgroup">
+                  <span class="p-inputgroup-addon"><i class="pi pi-phone"></i></span>
+                  <input type="text" pInputText placeholder="Numero">         
+                </div>
+              </div>
+            </div>
+            <div class="grid mt-3">
+              <div class="col-12">
+                <textarea [rows]="15" [cols]="30" pInputTextarea [autoResize]="true" class="w-full" placeholder="Mensaje"></textarea>
+              </div>
             </div>
         </div>
       </div>
@@ -89,7 +116,7 @@
     </form>
   </div>
   <div class="col-12 md:col-6 overflow-hidden form-imagen">
-    <img src="../../../assets/banner/1c04d2a7f356e11a6bd0c7023cdb13fa.jpg" alt="Image" class="md:ml-auto block md:h-full" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">
+    <img src="https://www.ozzieway.com/hosted/images/0c/ff46712fb64bc797a20bde4c6cfee6/Contact-Us2.jpg" alt="Image" class="block md:h-full imagen2" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">
   </div>
 </div>
 

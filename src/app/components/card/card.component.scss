@@ -155,6 +155,11 @@
 
 /* ------------------------------------------------------- efecto piola ------------------------------------------------------ */
 
+.fondo{
+    background: url("../../../assets/fondo-formal.jpg");
+    background-attachment: fixed;
+}
+
 .contenedor{
     position: relative;
     display: flex;
