@@ -16,11 +16,41 @@
 <!-- <div class="container">
     <div class="card">
         <img src="../../../assets/platillos/1.jpg" alt="">
-        <h2>John Smith</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <h2 class="text-2xl">Magret con salsa granada</h2>
+        <div>
+            <span class="mb-1 text-xl"></span>
+            <p-rating (ngModel)="val3" [readonly]='true' [cancel]="false"></p-rating>
+            <div class="grid">
+                <div class="col-6 pt-3"><span>$15</span></div>
+                <div class="col-6"><button pButton pRipple type="button" label="Comprar" class="p-button-raised p-button-warning p-2"></button></div>
+            </div>
+        </div>
     </div>
-</div>
- -->
+</div>  -->
+
+<p-carousel class="mr-0" [value]="platillos2" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="header">
+        <h5 class="flex justify-content-center align-items-center text-3xl sm:text-3xl md:text-5xl text-50 mb-4">Platillos</h5>
+    </ng-template>
+    <ng-template let-platillo pTemplate="item">
+        <div class="platillo-item">
+            <div class="platillo-item-content">
+                <div class="mb-3">
+                    <img [src]="platillo.imagen" [alt]="platillo.nombre" class="platillo-image"/>
+                </div>
+                <div>
+                    <span class="mb-1 text-base">{{platillo.nombre}}</span>
+                    <p-rating (ngModel)="val3" [readonly]='true' [cancel]="false"></p-rating>
+                    <div class="grid">
+                        <div class="col-6 pt-2"><span>${{platillo.precio}}</span></div>
+                        <div class="col-6"><button pButton pRipple type="button" label="Comprar" class="p-button-raised p-button-warning p-2"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
 
 <!-- chefs -->
 
@@ -44,17 +74,16 @@
     </div>
 </div> -->
 
-<!-- efecto piola -->
-<div class="grid grid-nogutter fondo">
-    <div *ngFor="let chef of chefs" class="contenedor sm:col-12 md:col-6"> <!-- flex justify-content-center align-items-center -->
-        <div class="carta">
-            <div class="contenido">
-                <h2>{{chef.nombre}}</h2>
-                <p>{{chef.descripcion}}</p>
-                <a href="#">Leer mas</a>
-            </div>
-            <img [src]="chef.imagen" alt="">
+<!-- ultima opcion -->
+
+<!-- <div class="contenedor">
+    <div class="carta" aTilt>
+        <div class="contenido">
+            <h2>01</h2>
+            <h3>Card One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quam ratione laboriosam facere nobis. Laborum quis earum ipsam dolor sed.</p>
+            <a href="#">Leer mas</a>
         </div>
     </div>
-</div>
+</div> -->
 

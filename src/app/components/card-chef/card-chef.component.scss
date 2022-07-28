@@ -1,76 +1,160 @@
+/*  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.fondo{
+    background: url("../../../assets/fondo-formal.jpg");
+    background-attachment: fixed;
+}
+
 .contenedor{
-    background: url(../../../assets/cook-making-dinner-kitchen-high-end-restaurant_110955-328.webp);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    z-index: 1;
+    padding: 40px 0;
 }
 
 .contenedor .carta{
     position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    background: rgba(255,255,255,0.1);
-    overflow: hidden;
+    width: 800px;
+    height: 350px;
+    margin: 20px;
     display: flex;
-    justify-content: center;
+    transition: 0.5s;
+    justify-content: flex-start;
     align-items: center;
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.5);
-    backdrop-filter: blur(5px);
+    background: linear-gradient(40deg,#090f14,#ffbe00);
+    border-radius: 3%;
+}
+
+.contenedor .carta img{
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    transition: 0.5s;
+}
+
+.contenedor .carta:hover img{
+    left: 70%;
+    height: 440px;
 }
 
 .contenedor .carta .contenido{
-    padding: 20px;
-    text-align: center;
-    transform: translateY(100px);
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 1.3em 1.3em 1.3em 2.5em;
     opacity: 0;
+    visibility: hidden;
     transition: 0.5s;
 }
 
 .contenedor .carta:hover .contenido{
-    transform: translateY(0px);
+    left: 0;
     opacity: 1;
+    visibility: visible;
 }
 
 .contenedor .carta .contenido h2{
-    position: absolute;
-    top: -120px;
-    right: 10px;
-    font-size: 8em;
-    color: rgba(255,255,255,0.05);
-    pointer-events: none;
-}
-
-.contenedor .carta .contenido h3{
-    font-size: 1.8em;
     color: #fff;
-    z-index: 1;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+
 }
 
 .contenedor .carta .contenido p{
-    font-size: 1em;
     color: #fff;
-    font-weight: 300; 
 }
 
 .contenedor .carta .contenido a{
     position: relative;
+    color: #111;
+    background: #fff;
     display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
-    background-attachment: #fff;
-    color: #fff;
-    color: #000;
-    border-radius: 20px;
+    padding: 0.6em 1.3em;
+    margin: 0.6em 0.6em 0.6em 0;
     text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 1872px) {
+    .contenedor .carta{
+        width: auto;
+        max-width: 700px;
+        align-items: flex-end;
+    }
+
+    .contenedor .carta:hover{
+        height: 700px;
+    }
+
+    .contenedor .carta:hover img{
+        margin-top: 1em;
+        top: 0;
+        left: 50%;
+        height: 400px;
+    }
+
+    .contenedor .carta .contenido{
+        padding-bottom: 5em;
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1073px) {
+    .contenedor .carta img{
+        width: 25em;
+        height: 20em;
+    }
+
+    .contenedor .carta:hover img{
+        width: 25em;
+        height: 20em;
+    }
+
+    .contenedor .carta:hover{
+        height: 550px;
+    }
+
+    .contenedor .carta .contenido{
+        padding-bottom: 2em;
+    }
+}
+@media (max-width: 924px) {
+    .contenedor .carta .contenido{
+        padding-bottom: .5em;
+    }
+}
+@media (min-width: 768px) and (max-width: 886px){
+    .contenedor .carta img{
+        width: 20em;
+        height: 20em;
+    }
+    .contenedor .carta:hover img{
+        width: 21em;
+    }
+}
+
+@media (max-width: 767px) {
+    .contenedor .carta .contenido{
+        padding-bottom: 2.5em;
+    }
+}
+
+@media (max-width: 445px) {
+    .contenedor .carta .contenido{
+        padding-bottom: 1.5em;
+    }
 }
 

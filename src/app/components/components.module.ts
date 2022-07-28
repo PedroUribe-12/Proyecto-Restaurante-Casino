@@ -8,7 +8,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule} from 'primeng/carousel';
 import {RatingModule} from 'primeng/rating';
 import { CardChefComponent } from './card-chef/card-chef.component';
-import {AngularTiltModule} from 'angular-tilt'
+import {AngularTiltModule} from 'angular-tilt';
+import {DialogModule} from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {AngularTiltModule} from 'angular-tilt'
     CardModule,
     CarouselModule,
     RatingModule,
-    AngularTiltModule 
+    AngularTiltModule,
+    DialogModule
   ],
   exports: [
     BannerComponent,

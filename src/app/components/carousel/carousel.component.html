@@ -9,11 +9,11 @@
                     <img [src]="platillo.imagen" [alt]="platillo.nombre" class="platillo-image"/>
                 </div>
                 <div>
-                    <span class="mb-1 text-sm">{{platillo.nombre}}</span>
+                    <span class="mb-1 text-base">{{platillo.nombre}}</span>
                     <p-rating (ngModel)="val3" [readonly]='true' [cancel]="false"></p-rating>
                     <div class="grid">
                         <div class="col-6"><span>${{platillo.precio}}</span></div>
-                        <div class="col-6"><button pButton pRipple type="button" label="Ir a platillos" class="p-button-raised p-button-warning p-2"></button></div>
+                        <div class="col-6"><button pButton pRipple type="button" label="{{platillo.nombre_btn}}" class="p-button-raised p-button-warning p-2"></button></div>
                     </div>
                 </div>
             </div>

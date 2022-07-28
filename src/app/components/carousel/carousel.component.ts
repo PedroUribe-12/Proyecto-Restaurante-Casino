@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Platillo } from 'src/app/shared/platillo';
 
 @Component({
@@ -8,6 +8,8 @@ import { Platillo } from 'src/app/shared/platillo';
 })
 export class CarouselComponent implements OnInit {
 
+  @Input() nombre_btn !: string;
+  platillos!: Platillo[]
   responsiveOptions: any[] = [];
 
   constructor() { 
@@ -19,12 +21,12 @@ export class CarouselComponent implements OnInit {
           numScroll: 3
       },
       {
-          breakpoint: '1119px',
+          breakpoint: '1173px',
           numVisible: 2,
           numScroll: 2
       },
       {
-          breakpoint: '892px',
+          breakpoint: '931px',
           numVisible: 1,
           numScroll: 1
       }
@@ -33,27 +35,28 @@ export class CarouselComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
+  this.platillos = [{
+    nombre: 'Magret con pure de remolacha', 
+    precio: 10,
+    imagen:'../../../assets/platillos/2.jpg',
+    nombre_btn: this.nombre_btn,
+  },
+  {
+    nombre:'Magret con salsa granada',
+    precio: 15,
+    imagen:'../../../assets/platillos/1.jpg',
+    nombre_btn: this.nombre_btn,  
+  },
+  {
+    nombre:'Beef Wellington',
+    precio: 20,
+    imagen:'../../../assets/platillos/3.jpg',
+    nombre_btn: this.nombre_btn,
+  },
+]
   }
 
   val3: number = 5;
 
-  platillos: Platillo[] = [{
-      nombre: 'Magret con pure de remolacha', 
-      precio: 10,
-      imagen:'../../../assets/platillos/2.jpg',
-      descripcion:'Hola como te va',
-    },
-    {
-      nombre:'Magret con salsa granada',
-      precio: 15,
-      imagen:'../../../assets/platillos/1.jpg',
-      descripcion:'Hola como te va',
-    },
-    {
-      nombre:'Beef Wellington',
-      precio: 20,
-      imagen:'../../../assets/platillos/3.jpg',
-      descripcion:'Hola como te va',
-    },
-  ]
 }
