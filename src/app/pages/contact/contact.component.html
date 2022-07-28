@@ -1,14 +1,13 @@
 <div class="grid grid-nogutter surface-section text-800">
-  <div class="col-12 md:col-7 overflow-hidden flex align-items-center justify-content-center fondo">
+  <div class="col-12 md:col-7 overflow-hidden flex align-items-center justify-content-center fondo" data-aos="fade-right" data-aos-duration="400">
     <div class="imagen"></div>
     <section class="px-3 md:px-7">
       <h1 class="block lg:text-8xl text-7xl font-bold mb-3">Contáctanos</h1>
       <h2 class="mb-4 text-xl md:text-2xl mt-5">Si necesitas contactarnos para realizar alguna pregunta, comentario o sugerencia, por favor, siéntete libre de hacerlo, tus aportaciones nos sirven de gran manera para seguir mejorando.</h2>
-      <button pButton pRipple label="Enviar mensaje" type="button" class="mr-3 p-button-raised"></button>
     </section>
   </div>
   <div class="col-12 md:col-5 p-6 text-center md:text-left flex align-items-center justify-content-center info h-screen">
-      <section>
+      <section data-aos="fade-down" data-aos-duration="400">
           <h2 class="lg:text-7xl md:text-5xl text-6xl titulo-2 mt-3">Datos de contacto</h2>
             <div class="grid">
               <div class="col-2"><i class="pi pi-map-marker text-6xl md:text-5xl lg:text-7xl pt-6"></i></div>
@@ -45,7 +44,7 @@
 
 <div class="grid surface-section">
   <div class="col-12 md:col-6 mt-4 mb-4">
-      <div class="grid">
+      <div class="grid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0">
           <div class="col-12 flex align-items-center justify-content-center text-2xl md:text-xl lg:text-3xl">
               <h2>Llamar: (+54) 299-552-5912</h2>
           </div>
@@ -54,13 +53,13 @@
           </div>
       </div>
   </div>
-  <div class="col-12 md:col-6 mt-4 mb-4 flex align-items-center justify-content-center">
-    <button pButton type="button" label="Aprende más sobre nosotros" class="p-button-warning"></button>
+  <div class="col-12 md:col-6 mt-4 mb-4 flex align-items-center justify-content-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0">
+    <button pButton routerLink="/sobre_nosotros" label="Aprende más sobre nosotros" class="p-button-warning"></button>
   </div>
 </div>
 <div class="grid grid-nogutter formulario justify-content-center">
   <div class="col-12 lg:col-6 p-6 text-center md:text-left contenedor">
-    <form class="text-50">
+    <form class="text-50" data-aos="flip-left" data-aos-duration="700">
       <div class="grid">
         <div class="col-12">
             <h2 class="text-6xl">Ponte En Contacto</h2>
@@ -70,18 +69,12 @@
                       <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
                       <input type="text" pInputText placeholder="Nombre">         
                     </div>
-                  <!-- <h5 class="text-base mb-2">Nombre</h5>
-                  <i class="pi pi-users mr-3"></i>
-                  <p-chips (ngModel)="valores"></p-chips> -->
                 </div>
                 <div class="col-12 md:col-6">
                   <div class="p-inputgroup">
                     <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
                     <input type="text" pInputText placeholder="Apellido">         
                   </div>
-                  <!-- <h5 class="text-base mb-2">Apellido</h5>
-                  <i class="pi pi-users mr-3"></i>
-                  <p-chips (ngModel)="valores"></p-chips> -->
                 </div>
             </div>
             <div class="grid">
@@ -103,6 +96,11 @@
                 <textarea [rows]="15" [cols]="30" pInputTextarea [autoResize]="true" class="w-full" placeholder="Mensaje"></textarea>
               </div>
             </div>
+            <div class="grid pt-2">
+              <div class="col-12">
+                <button pButton pRipple type="button" class="p-button-warning">Enviar</button>
+              </div>
+            </div>
         </div>
       </div>
       <!-- <div class="grid">
@@ -115,8 +113,8 @@
       </div> -->
     </form>
   </div>
-  <div class="col-12 md:col-6 overflow-hidden form-imagen">
-    <img src="https://www.ozzieway.com/hosted/images/0c/ff46712fb64bc797a20bde4c6cfee6/Contact-Us2.jpg" alt="Image" class="block md:h-full imagen2" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">
+  <div class="col-12 md:col-6 overflow-hidden form-imagen" data-aos="fade-up">
+    <img src="https://s3.us-west-2.amazonaws.com/cdn.centrum.pucp.education/wp-content/uploads/2020/12/30161555/contactanos.png" alt="Image" class="block md:h-full imagen2" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">
   </div>
 </div>
 

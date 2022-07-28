@@ -57,3 +57,29 @@ img{
     }
 }
 
+@media (min-width: 2268px) {
+    img{
+        position: absolute;
+        right: 5%;
+        z-index: 1;
+        height: 50em;
+    }
+}
+
+@media (min-width: 2982px) {
+    img{
+        position: absolute;
+        right: 8%;
+        z-index: 1;
+        height: 60em;
+    }
+}
+
+@media (min-width: 4125px) {
+    img{
+        position: absolute;
+        right: 8%;
+        z-index: 1;
+        height: 70em;
+    }
+}

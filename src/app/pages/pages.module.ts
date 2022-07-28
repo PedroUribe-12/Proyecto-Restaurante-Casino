@@ -10,6 +10,7 @@ import { ChipsModule } from 'primeng/chips';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import {ImageModule} from 'primeng/image';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {ImageModule} from 'primeng/image';
     ChipsModule,
     InputTextModule,
     InputTextareaModule,
-    ImageModule
+    ImageModule,
+    AppRoutingModule
   ]
 })
 export class PagesModule { }

@@ -64,3 +64,45 @@
 /* #110303 */
 
 
+:host ::ng-deep .p-button {
+    margin: 0 .5rem 0 0;
+    min-width: 10rem;
+}
+
+p {
+    margin: 0;
+}
+
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-dialog .p-button {
+    min-width: 6rem;
+}
+
+@media (max-width: 576px) {
+    ::ng-deep{
+        .p-dialog-top .p-dialog{
+            width: 25em !important;
+        }
+    }
+}
+
+@media (max-width: 1029px) {
+    ::ng-deep{
+        .p-dialog-top .p-dialog{
+            width: 30em !important;
+        }
+    }
+}
+
+@media (max-width: 607px) {
+    ::ng-deep{
+        .p-dialog-top .p-dialog{
+            width: 22em !important;
+        }
+    }
+}

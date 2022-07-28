@@ -33,7 +33,7 @@
 
 .info{
     padding: 15% 0 15% 0;
-    h1{
+    h2{
         border-left: #FFBE00 solid .3em;
         padding-left: 3%;
     }
@@ -62,8 +62,74 @@
     }
 }
 
-@media (max-height: 726px) and (max-width:1166) {
-    
+@media (max-height: 726px) and (max-width:1880px) {
+    .info h2{
+        font-size: 2em !important;
+    }
+
+    i{
+        font-size: 2em !important;
+    }
+
+    .sub-titulo{
+        font-size: 2em !important;
+    }
+
+    .parrafo{
+        font-size: 1em !important;
+    }
+
+    .columna{
+        padding-top: 0;
+    }    
+}
+
+@media (max-height: 629px) and (max-width:1880px) {
+    li{
+        font-size: 0.7em !important;
+    }
+    .span-multi{
+
+        font-size: 0.7em !important;
+    }
+
+    .columna{
+        padding-top: 0;
+    }
+
+    .caja1, .caja2{
+        padding-top: 0 !important;
+    }
+}
+
+@media (max-height: 597px) and (max-width:1258px) {
+    li{
+        font-size: 0.4em !important;
+    }
+    .span-multi{
+
+        font-size: 0.5em !important;
+    }
+
+    .columna{
+        padding-top: 0;
+    }
+
+    .columna{
+        padding-top: 0;
+    }
+}
+
+@media (max-height: 597px) and (max-width:992px) {
+    li{
+        font-size: 0.55em !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .info h2{
+        font-size: 3em !important;
+    }
 }
 
 .frase{

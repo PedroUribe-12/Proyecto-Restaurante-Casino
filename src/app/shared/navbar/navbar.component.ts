@@ -7,6 +7,11 @@ import {MenuItem} from 'primeng/api';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  displayPosition!: boolean;
+
+  position!: string;
+
+  value: any;
 
   constructor() { 
     window.addEventListener("scroll", function(){
@@ -35,7 +40,12 @@ export class NavbarComponent implements OnInit {
         label: 'Nosotros',
         routerLink: 'sobre_nosotros'
       }
-  ];
+    ];
   }
+
+  showPositionDialog(position: string) {
+    this.position = position;
+    this.displayPosition = true;
+  } 
 
 }

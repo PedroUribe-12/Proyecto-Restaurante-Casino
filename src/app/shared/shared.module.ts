@@ -4,6 +4,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import {MenubarModule} from 'primeng/menubar';
 import {ButtonModule} from 'primeng/button';
+import {DialogModule} from 'primeng/dialog';
+import {TriStateCheckboxModule} from 'primeng/tristatecheckbox';
 
 @NgModule({
   declarations: [
@@ -13,11 +15,13 @@ import {ButtonModule} from 'primeng/button';
   imports: [
     CommonModule,
     MenubarModule,
-    ButtonModule
+    ButtonModule,
+    DialogModule,
+    TriStateCheckboxModule
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ]
 })
 export class SharedModule { }
