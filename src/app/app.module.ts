@@ -7,6 +7,8 @@ import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import {ChipsModule} from 'primeng/chips';
+import { AngularFireModule} from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import {ChipsModule} from 'primeng/chips';
     ComponentsModule,
     SharedModule,
     PagesModule,
-    ChipsModule
+    ChipsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
